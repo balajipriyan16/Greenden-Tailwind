@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="./output.css" rel="stylesheet">
+  </head>
+
+<body>
+
+    <!-- Responsive Navbar -->
+    <nav class="bg-green-100 p-3 flex justify-between items-center shadow-xl sticky top-0 z-10">
+
+        <h1 class="text-5xl font-bold">Greenden</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <ul class="gap-5 text-gray-600 cursor-pointer hidden md:flex">
+            <li><a class="hover:text-black hover:underline" href="./index.html">Home</a></li>
+            <li><a class="hover:text-black hover:underline" href="./product.html">Product</a></li>
+            <li><a class="hover:text-black hover:underline" href="./contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Products -->
+    <section class="p-4 text-center">
+        <h1 class="font-bold text-3xl mt-5">Our Products</h1>
+        <input type="text" class="border border-black p-3 m-3 text-xl" style="width: 80%;" placeholder="Search for Products">
+        <div class="grid grid-cols-2 mt-5 gap-5 md:grid-cols-4">
+            <div>
+                <img src="./imgs/bs1.png" alt="Rose Plant" class="inline hover:shadow-2xl transform hover:-translate-y-0.5 rounded-xl">
+                <h1>Rose Plant</h1>
+                <p>$30</p>
+            </div>
+
+            <div>
+                <img src="./imgs/bs2.png" alt="Lily Plant" class="inline hover:shadow-2xl transform hover:-translate-y-0.5 rounded-xl">
+                <h1>Lily Plant</h1>
+                <p>$25</p>
+            </div>
+
+            <div>
+                <img src="./imgs/bs3.png" alt="Snake Plant" class="inline hover:shadow-2xl transform hover:-translate-y-0.5 rounded-xl">
+                <h1>Snake Plant</h1>
+                <p>$15</p>
+            </div>
+
+            <div>
+                <img src="./imgs/bs4.png" alt="Cactus Plant" class="inline hover:shadow-2xl transform hover:-translate-y-0.5 rounded-xl">
+                <h1>Cactus Plant</h1>
+                <p>$18</p>
+            </div>
+
+            <div>
+                <img src="./imgs/bs5.png" alt="Aloe Vera" class="inline hover:shadow-2xl transform hover:-translate-y-0.5 rounded-xl">
+                <h1>Aloe Vera</h1>
+                <p>$20</p>
+            </div>
+
+            <div>
+                <img src="./imgs/bs6.png" alt="Money Plant" class="inline hover:shadow-2xl transform hover:-translate-y-0.5 rounded-xl">
+                <h1>Money Plant</h1>
+                <p>$22</p>
+            </div>
+
+            <div>
+                <img src="./imgs/bs7.png" alt="Areca Palm" class="inline hover:shadow-2xl transform hover:-translate-y-0.5 rounded-xl">
+                <h1>Areca Palm</h1>
+                <p>$35</p>
+            </div>
+
+            <div>
+                <img src="./imgs/bs8.png" alt="Jade Plant" class="inline hover:shadow-2xl transform hover:-translate-y-0.5 rounded-xl">
+                <h1>Jade Plant</h1>
+                <p>$28</p>
+            </div>
+        </div>
+    </section>
+
+
+    
+</body>
+</html>
