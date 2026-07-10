@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link href="./output.css" rel="stylesheet">
   </head>
 
 <body>
@@ -13,7 +12,7 @@
     <nav class="bg-green-100 p-3 flex justify-between items-center shadow-xl sticky top-0 z-10">
 
         <h1 class="text-5xl font-bold">Greenden</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 md:hidden">
+        <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 md:hidden cursor-pointer">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
         <ul class="gap-5 text-gray-600 cursor-pointer hidden md:flex">
@@ -24,11 +23,23 @@
 
     </nav>
 
+    <!-- Side Navbar -->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 right-0 transition-all duration-500" style="width: 50%; height: 100vh;right: -50%;">
+        <div class="text-right p-5">
+            <p id="close-nav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="gap-5 text-gray-600 cursor-pointer flex flex-col items-center gap-10">
+            <li><a class="hover:text-black hover:underline" href="./index.html">Home</a></li>
+            <li><a class="hover:text-black hover:underline" href="./product.html">Product</a></li>
+            <li><a class="hover:text-black hover:underline" href="./contact.html">Contact</a></li>
+        </ul>
+    </section>
+
     <!-- Products -->
     <section class="p-4 text-center">
         <h1 class="font-bold text-3xl mt-5">Our Products</h1>
-        <input type="text" class="border border-black p-3 m-3 text-xl" style="width: 80%;" placeholder="Search for Products">
-        <div class="grid grid-cols-2 mt-5 gap-5 md:grid-cols-4">
+        <input id="search" type="text" class="border border-black p-3 m-3 text-xl rounded-xl" style="width: 80%;" placeholder="Search for Products">
+        <div id="container" class="grid grid-cols-2 mt-5 gap-5 md:grid-cols-4">
             <div>
                 <img src="./imgs/bs1.png" alt="Rose Plant" class="inline hover:shadow-2xl transform hover:-translate-y-0.5 rounded-xl">
                 <h1>Rose Plant</h1>
@@ -79,6 +90,7 @@
         </div>
     </section>
 
+    <script src="product.js"></script>
 
     
 </body>

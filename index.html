@@ -12,7 +12,7 @@
     <nav class="bg-green-100 p-3 flex justify-between items-center shadow-xl sticky top-0 z-10">
 
         <h1 class="text-5xl font-bold">Greenden</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 md:hidden">
+        <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 md:hidden cursor-pointer">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
         <ul class="gap-5 text-gray-600 cursor-pointer hidden md:flex">
@@ -22,6 +22,18 @@
         </ul>
 
     </nav>
+
+    <!-- Side Navbar -->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 right-0 transition-all duration-500" style="width: 50%; height: 100vh;right: -50%;">
+        <div class="text-right p-5">
+            <p id="close-nav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="gap-5 text-gray-600 cursor-pointer flex flex-col items-center gap-10">
+            <li><a class="hover:text-black hover:underline text-2xl font-bold" href="./index.html">Home</a></li>
+            <li><a class="hover:text-black hover:underline text-2xl font-bold" href="./product.html">Product</a></li>
+            <li><a class="hover:text-black hover:underline text-2xl font-bold" href="./contact.html">Contact</a></li>
+        </ul>
+    </section>
 
     <!-- Header  -->  
     <section class="p-4 md:p-10 bg-green-100 flex justify-evenly">
@@ -147,6 +159,8 @@
         <p class="mt-5">&copy; Greenden 2021</p>
      </section>
     
+     <script src="script.js"></script>
+
 </body>
 
 </html>
